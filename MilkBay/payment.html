@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="payment-css/styles.css">
+
+</head>
+<body>
+
+<h2 style="text-decoration: underline;">Payment</h2>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container"> 
+      <form name="payment" action="/success.html" method="post" data-netlify="true"  >
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="xyz" required>
+            <label for="phone"><i class="fa fa-phone" aria-hidden="true"></i> Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="0123456789" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="email" name="email" placeholder="xyz@example.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Cuddalore" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Panruti" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Tamilnadu" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <div style="padding-top: 30px;">
+              Currently Only Cash On Delivery is available.
+              <label style="padding-top: 20px;">
+                <input type="checkbox" checked="checked" name="cod" required>Continue With Cash On Delivery.
+              </label>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr" required> Shipping Address same as Billing
+        </label>
+        <input type="submit" value="Continue to Payment" class="btn">
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
